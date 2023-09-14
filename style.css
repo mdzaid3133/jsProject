@@ -1,0 +1,145 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+main{
+    display: flex;
+}
+.logo{
+    width: 150px;
+}
+.shopingContainer{
+    width: 75vw;
+    height: 100vh;
+    position: relative;
+}
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    height: 8vh;
+    padding: 0px 10px;
+    position: fixed;
+    width: 75vw;
+    overflow: hidden;
+}
+.sidebar{
+    width: 24vw;
+    height: 100vh;
+    background-color: #fbfbfc;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+.cartCounterBox{
+    display: flex;
+    align-items: center;
+    width: 50px;
+}
+i{
+    font-size: 20px;
+}
+.itemCounter{
+    font-size: 21px;
+    font-weight: bold;
+    margin-top: -25px;
+    
+}
+/*--------------------------------------------------------------*/
+/*product css*/
+.proudct-container{
+    width: 100%;
+    padding-top: 9vh;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    background-color: rgb(189, 185, 185);
+}
+.proudctCard{
+    width: 350px;
+    padding: 30px 30px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #fff;
+    margin-bottom: 10px;
+    flex-grow: 1;
+}
+.proimg{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 8px;
+}
+.proTitle{
+    font-size: 17px;
+    font-weight: bold;
+    margin-bottom: 8px; 
+    white-space:nowrap;
+    overflow: hidden;         
+    text-overflow: ellipsis;
+}
+.proPrice{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+.cartBtn{
+    width: 80%;
+    height: 40px;
+    font-size: 17px;
+    font-weight: bold;
+    background-color: rgb(121, 105, 247);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+/*------------------------------------------------------*/
+/*cart section css*/
+#cartmsg{
+    margin:10px 0px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 3px solid gray;
+}
+.CartListContainer{
+    padding: 20px 20px;
+    height: 85vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.totalPrice{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.cartImg{
+    width: 60px;
+    height: 60px;
+}
+.cartItem{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.cartProPrice{
+    font-weight: bold;
+}
+.cartItem i{
+  cursor: pointer;
+  color: red;
+}
+
