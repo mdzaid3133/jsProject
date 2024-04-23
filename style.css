@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body{
     font-family: sans-serif;
 }
@@ -14,7 +15,7 @@ main{
 }
 .shopingContainer{
     width: 75vw;
-    height: 100vh;
+    
     position: relative;
 }
 #navbar{
@@ -22,7 +23,7 @@ main{
     justify-content: space-between;
     align-items: center;
     background-color: antiquewhite;
-    height: 8vh;
+    height: 9vh;
     padding: 0px 10px;
     position: fixed;
     width: 75vw;
@@ -30,12 +31,26 @@ main{
 }
 .sidebar{
     width: 24vw;
-    height: 100vh;
     background-color: #fbfbfc;
     position: fixed;
     right: 0;
     top: 0;
     overflow: hidden;
+}
+.priceDiv{
+    display: flex;
+     align-items: center;
+     justify-content: space-between;
+     padding: 10px;
+}
+.priceDiv button{
+    padding: 4px;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    border: 2px solid rgb(151, 241, 55);
+    cursor: pointer;
+
 }
 .cartCounterBox{
     display: flex;
@@ -51,11 +66,68 @@ i{
     margin-top: -25px;
     
 }
+.searchBox{
+    display: flex;
+   width: 400px;
+   height: 35px;
+
+}
+#searchBar{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+    font-size: 17px;
+    
+}
+#searchBtn{
+    background-color: rgb(137, 70, 244);
+    color: #fff;
+    font-weight: bold;
+    padding: 0px 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
 /*--------------------------------------------------------------*/
+.buttons{
+    margin-top: 9vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    
+}
+.buttons button.active{
+    background-color: rgb(137, 70, 244);
+    color: #fff;
+}
+.buttons button{
+    padding: 10px 30px;
+    margin-left: 20px;
+    border-radius: 25px;
+    background-color: #fbfbfc;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    box-shadow: 2px 3px 6px gray;
+    cursor: pointer;
+}
+
+#searchBtn:hover{
+   background-color: blueviolet;
+}
+
 /*product css*/
 .proudct-container{
     width: 100%;
-    padding-top: 9vh;
+    padding-top: 1vh;
     padding-left: 15px;
     padding-right: 15px;
     display: flex;
@@ -63,7 +135,10 @@ i{
     flex-wrap: wrap;
     background-color: rgb(189, 185, 185);
 }
-.proudctCard{
+.productCard.hidden{
+    display: none;
+}
+.productCard{
     width: 350px;
     padding: 30px 30px;
     text-align: center;
@@ -126,6 +201,7 @@ i{
     width: 60px;
     height: 60px;
 }
+
 .cartItem{
     display: flex;
     align-items: center;
@@ -142,4 +218,63 @@ i{
   cursor: pointer;
   color: red;
 }
+.cartItem i:hover{
+    font-size: 21px;
+}
 
+
+/*************************************/
+.container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.card {
+    width: 400px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    margin-top: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

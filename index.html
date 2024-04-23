@@ -16,37 +16,51 @@
 <body>
     <main>
         <div class="shopingContainer">
-            <header>
+            <header> 
                 <nav id="navbar">
                     <div>
                         <img src="logo-removebg-preview.png" alt="" class="logo">
                     </div>
+
+                     <div class="searchBox">
+                        <input type="text" placeholder="Search Product" id="searchBar">
+                        <button id="searchBtn">Search</button>
+                     </div>
                     <div class="cartCounterBox">
-                        <i class="fa-solid fa-cart-shopping">
+                       
+                        <i class="fa-solid fa-cart-shopping" id="cartIcon">
                         </i>
+                      
                         <p class="itemCounter" id="itemCounter"></p>
                     </div>
                 </nav>
-            </header>
+            </header> 
 
+             <div class="buttons">
+               <button class="btn-value" onclick="filterProduct('All')">All</button>
+               <button class="btn-value"onclick="filterProduct('mensclothing')">men's clothing</button>
+               <button class="btn-value"onclick="filterProduct('jewelery')">jewelery</button>
+               <button class="btn-value"onclick="filterProduct('electronics')">electronics</button>
+               <button class="btn-value"onclick="filterProduct('womensclothing')">women's clothing</button>
+                
+             </div>
+            
             <div class="proudct-container" id="productContainer">
 
             </div>
 
         </div>
-
-
-        <aside class="sidebar">
+        <div class="sidebar">
             <div>
                 <h2 id="cartmsg">Your Cart is Empty</h2>
             </div>
-            <div>
+            <div class="priceDiv">
                 <p class="totalPrice" id="totalCartPrice"></p>
+                <button id="checkoutBtn" type="submit">Checkout</button>
             </div>
-            <div class="CartListContainer" id="cartListContainer">
-            </div>
-        </aside>
+            <div class="CartListContainer" id="cartListContainer"></div>
 
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
